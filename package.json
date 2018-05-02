@@ -1,0 +1,26 @@
+{
+  "name": "disciply-starter-kit",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "css-slam": "^2.1.0",
+    "del": "^2.2.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.0",
+    "eslint-plugin-html": "^2.0.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "i": "^0.3.6",
+    "merge-stream": "^1.0.1",
+    "polymer-build": "^1.0.0"
+  },
+  "scripts": {
+    "lint": "npm run lint:javascript && polymer lint",
+    "lint:javascript": "eslint . --ext js,html --ignore-path .gitignore",
+    "test": "polymer test",
+    "test:integration": "polymer build # test that psk builds without error with the CLI",
+    "build": "gulp build"
+  }
+}
